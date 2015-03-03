@@ -22,9 +22,9 @@ class ChinaUnicom_Login():
         sys_type = system() # 系统类型
         user_dir = os.path.expanduser('~')  #用户家目录
         if sys_type == 'Linux':
-            self.userinfo_dir = user_dir + '/Documents/CU_login'
+            self.userinfo_dir = user_dir + '/CU_login'
         elif sys_type == 'Windows':
-            self.userinfo_dir = user_dir + '\\My Documents\\CU_login'
+            self.userinfo_dir = user_dir + '\\CU_login'
         else:
             print 'Unsupported system.Try using Linux or Windows.'
             exit(0) # 平台不支持,直接退出
