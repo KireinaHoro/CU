@@ -80,7 +80,7 @@ class ChinaUnicom_Login():
         #测试是否处于已登录状态
         
         h = httplib2.Http()
-        response, _ = h.request('http://61.135.169.105/') # http://www.baidu.com
+        response, _ = h.request('http://baidu.com/') # http://www.baidu.com
         
         if response['content-location'] == 'http://202.106.46.37':
             #访问baidu却跳转到CU登陆页面,说明未登陆
